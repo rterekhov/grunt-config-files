@@ -1,17 +1,24 @@
 {
   "name": "grunt-config-files",
-  "version": "0.1.0",
   "description": "Grunt plugin that generates config files from their templates.",
+  "version": "0.1.0",
   "author": {
     "name": "Roman Terekhov",
     "email": "roman.terekhov@gmail.com"
   },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/rterekhov/grunt-config-files.git"
   },
   "bugs": "https://github.com/rterekhov/grunt-config-files/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "main": "tasks/config.js",
+  "devDependencies": {
+    "grunt": "^1.0.0"
+  },
   "keywords": [
     "grunt",
     "gruntplugin",
@@ -19,5 +26,8 @@
     "templates",
     "settings",
     "config"
+  ],
+  "files": [
+    "tasks"
   ]
 }
