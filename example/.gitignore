@@ -1,0 +1,8 @@
+/node_modules/
+
+# Track config file templates instead of real config files
+/config_file_1.txt
+/config_file_2.xml
+
+# The file wil be created from 'settings.default.js' when missing
+/settings.js

@@ -1,0 +1,5 @@
+<config>
+    <name><%= user.name %></name>
+    <email><%= user.email %></email>
+    <connection_string><%= connection_string %></connection_string>
+</config>

@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "deep-extend": "^0.4.1",
+    "grunt": "^1.0.1",
+    "grunt-config-files": "^0.1.0"
+  }
+}
