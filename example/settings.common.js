@@ -1,6 +1,6 @@
 module.exports = {
     user: {
-        name: "Administrator",
-        email: "admin@email.com"
+        name: 'Administrator',
+        email: 'admin@email.com'
     }
 };
