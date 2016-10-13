@@ -33,7 +33,7 @@ Path to the file with configuration settings.
 Type: `Array`
 Default: `[ '**/*.template' ]`
 
-Pathes to the configuration file templates to be processed.
+Paths to the configuration file templates to be processed.
 
 #### logSettings
 Type: `Boolean`
@@ -75,7 +75,7 @@ Generate configuration file with:
 ```shell
 $ grunt config
 ```
-This command will create `settings.js` file (if it missing) from `settings.default.js` and then process configuration template with the settigs from this file.
+This command will create `settings.js` file (if it missing) from `settings.default.js` and then process configuration template with the settings from this file.
 
 You can also generate configuration file with the following commands:
 ```shell
@@ -94,7 +94,7 @@ $ cat .gitignore
 # The file will be created from 'settings.default.js' when missing
 /config/settings.js
 ```
-Since `settings.js` is not tracked by git, the file may be adjusted for current development needs. The file will not be overriden when you run `grunt config` task. It is just created from `settings.default.js` when it missing.
+Since `settings.js` is not tracked by git, the file may be adjusted for current development needs. The file will not be overridden when you run `grunt config` task. It is just created from `settings.default.js` when it missing.
 
 Settings defined by an ordinary JavaScript file:
 ```bash
@@ -107,7 +107,7 @@ module.exports = {
 };
 ```
 
-You may process and override settings in any way you like. Put, for example, common settings in a sepatate file like `settings.common.js` and then import them from another settings file. Use `deep-extend` module to easy add new or override existing settings.
+You may process and override settings in any way you like. Put, for example, common settings in a separate file like `settings.common.js` and then import them from another settings file. Use `deep-extend` module to easy add new or override existing settings.
 ```bash
 $ cat config/settings.test.js
 var deepExtend = require('deep-extend');
