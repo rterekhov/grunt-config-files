@@ -1,3 +1,0 @@
-name:              <%= user.name %>
-email:             <%= user.email %>
-connection_string: <%= connection_string %>
