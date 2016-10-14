@@ -61,9 +61,8 @@ module.exports = function(grunt) {
             grunt.log.writeln();
             grunt.log.writeln('Template files:');
 
-            for (var i = 0, l = templateFiles.length; i < l; i++) {
-                grunt.log.writeln(templateFiles[i]);
-            }
+            templateFiles.forEach(grunt.log.writeln);
+
             if (templateFiles.length === 0) {
                 grunt.log.error('No template files found');
             }
