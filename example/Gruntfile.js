@@ -2,6 +2,7 @@ module.exports = function(grunt) {
     'use strict';
 
     grunt.loadNpmTasks('grunt-config-files');
+//    grunt.loadTasks('../tasks');
 
     grunt.initConfig({
         config: {
