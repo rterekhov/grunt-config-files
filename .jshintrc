@@ -1,0 +1,22 @@
+{
+    // Enforcing
+    "bitwise":    true,
+    "curly":      true,
+    "eqeqeq":     true,
+    "forin":      true,
+    "freeze":     true,
+    "immed":      true,
+    "newcap":     true,
+    "noarg":      true,
+    "noempty":    true,
+    "nonbsp":     true,
+    "nonew":      true,
+    "undef":      true,
+    "strict":     true,
+    "trailing":   true,
+    "unused":     true,
+    "latedef":    true,
+
+    // Environment
+    "node":       true
+}
