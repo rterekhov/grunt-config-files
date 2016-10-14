@@ -17,7 +17,8 @@
   },
   "main": "tasks/config.js",
   "devDependencies": {
-    "grunt": "^1.0.0"
+    "grunt": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0"
   },
   "keywords": [
     "grunt",
