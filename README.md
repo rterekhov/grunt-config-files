@@ -16,6 +16,12 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-config-files');
 ```
 
+## Overview
+
+This is a solution for situation where your project needs several versions of configuration files for different environments. The solution is based on files and may be applied in any kind of projects, not just JavaScript projects that use grunt as a build tool, but really any kind of projects. The grunt and this plugin are used for generating config files from templates and a set of settings files.
+
+The plugin uses `grunt.template.process` for the templating. It is very lightweight and doesn’t have any dependencies.
+
 ## Config task
 _Run this task with the `grunt config` command._
 
@@ -46,6 +52,16 @@ Type: `Boolean`
 Default: `true`
 
 Log all found configuration file templates.
+
+## Setting files
+
+Setting files are ordinary nodejs JavaScript files that export object with configuration settings. You may have as many setting files as you need by using suffixes in the file names: `settings.js`, `settings.default.js`, `settings.test.js`, `settings.prod.js`, `settings.common.js` etc. The `settings.js` file is used when no suffix is given in the task. The `settings.default.js` file is used for creating `settings.js` file when it is missing.
+
+## Template files
+
+Configuration file templates are used instead of real configuration files. The templates use placeholders `<%= value %>` for the values that should be different in the different environments.
+
+For more details and examples, see the [documentation for the `_.template()` method](http://lodash.com/docs#template).
 
 ## Usage Examples
 
@@ -120,4 +136,14 @@ module.exports = deepExtend(commonSettings, {
     },
     connection_string: 'test_connection_string'
 });
+```
+
+The configuration file template contain placeholders instead of the values itself.
+```bash
+$ cat app.config.template
+<config>
+    <name><%= user.name %></name>
+    <email><%= user.email %></email>
+    <connection_string><%= connection_string %></connection_string>
+</config>
 ```
