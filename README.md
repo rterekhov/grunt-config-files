@@ -63,7 +63,7 @@ Configuration file templates are used instead of real configuration files. The t
 
 For more details and examples, see the [documentation for the `_.template()` method](http://lodash.com/docs#template).
 
-## Usage Examples
+## Usage example
 
 Having the configuration files:
 ```shell
@@ -138,7 +138,7 @@ module.exports = deepExtend(commonSettings, {
 });
 ```
 
-The configuration file template contain placeholders instead of the values itself.
+The configuration file template contains placeholders instead of the values itself.
 ```bash
 $ cat app.config.template
 <config>
