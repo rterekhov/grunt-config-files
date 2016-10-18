@@ -1,4 +1,4 @@
-# grunt-config-files
+# grunt-config-files [![Build Status](https://travis-ci.org/rterekhov/grunt-config-files.svg?branch=master)](https://travis-ci.org/rterekhov/grunt-config-files)
 
 > Grunt plugin that generates config files from their templates.
 
