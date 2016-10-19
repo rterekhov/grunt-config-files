@@ -6,7 +6,7 @@
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
-```shell
+```
 $ npm install grunt-config-files --save-dev
 ```
 
@@ -37,7 +37,7 @@ Path to the file with configuration settings.
 
 #### templateFiles
 Type: `Array`
-Default: `[ '**/*.template' ]`
+Default: `['**/*.template']`
 
 Paths to the configuration file templates to be processed.
 
@@ -66,7 +66,7 @@ For more details and examples, see the [documentation for the `_.template()` met
 ## Usage example
 
 Having the configuration files:
-```shell
+```
 ├── app.config.template
 └── config
     ├── settings.common.js
@@ -88,13 +88,13 @@ config: {
 ```
 
 Generate configuration file with:
-```shell
+```
 $ grunt config
 ```
 This command will create `settings.js` file (if it missing) from `settings.default.js` and then process configuration template with the settings from this file.
 
 You can also generate configuration file with the following commands:
-```shell
+```
 $ grunt config:default
 $ grunt config:test
 $ grunt config:prod
